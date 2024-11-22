@@ -1,14 +1,13 @@
 function findAccountById(accounts, id) {
   return accounts.find(function(account) {
       return account.id === id;
-  });
+  });}
   // .find()
 
   function sortAccountsByLastName(accounts) {
     return accounts.sort((accountA, accountB) => accountA.name.last < accountB.name.last ? -1 : 1);
   }
-  // YOUR SOLUTION HERE
-  // Hint: You can use the [`sort()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort) method here. 
+  
 
   function getAccountFullNames(accounts) {
   return accounts.map(function(account) {
